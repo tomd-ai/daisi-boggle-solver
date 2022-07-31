@@ -45,10 +45,6 @@ class PrefixTree:
             self.__child_words_for(node.children[letter], words)
 
     def starts_with(self, prefix):
-        '''
-        Returns a list of all words beginning with the given prefix, or
-        an empty list if no words begin with that prefix.
-        '''
         words = list()
         current = self.root
         for char in prefix:
@@ -62,10 +58,6 @@ class PrefixTree:
         return words
 
     def size(self, current=None):
-        '''
-        Returns the size of this prefix tree, defined
-        as the total number of nodes in the tree.
-        '''
         # By default, get the size of the whole trie, starting at the root
         if not current:
             current = self.root
