@@ -1,5 +1,6 @@
 # Boggle solving algorithm
 This is a project that I built to try out streamlit on some existing code that I had for another project.  
+Deployed as part of the Daisi platform hackathon: https://www.hackerearth.com/challenges/hackathon/the-very-first-daisitm-hackathon/ 
 
 It is an interactive streamlit app that will solve a 4X4 english boggle grid.
 
