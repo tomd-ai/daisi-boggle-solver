@@ -1,7 +1,7 @@
 import streamlit as st
 from st_aggrid import AgGrid
-from allSolutions import solve_wall
-from newBoard import genNewBoard
+from packages.allSolutions import solve_wall
+from packages.newBoard import genNewBoard
 import pandas as pd
 
 blankBoard = {
@@ -14,7 +14,7 @@ blankBoard = {
 if __name__ == "__main__":
     st.set_page_config(layout = "wide")
 
-    st.title("Boggle word finder")
+    st.title("Boggle solver")
 
     st.write("Uses the power of tries to solve boggle grids.")
     st.write("Double click each cell to fill in your grid, then press solve.")
